@@ -50,6 +50,7 @@ costs = {('Atlanta', 'East'): 232,
 transport = LpVariable.dicts("route", [(w,c) for w in warehouse for c in customers], lowBound=0, cat='Integer')
 
 # Define Objective 
+# lpSum: sum of linear expressions
 model += lpSum([cost[(w,c)]*transport[(w,c)] for w in warehouse for c in customers])
 
 # For each customer, sum warehouse shipments and set equal to customer demand
