@@ -12,13 +12,15 @@ Optimization use mathematical model whose requirements are linear relationships
 ### Common modeling process for PuLP
 #### 1. Intialize Model: __LpProblem()__
 > model = LpProblem(name = "Name of your problem", sense = LpMinimize/LpMaxmize) 
+> 
 #### 2. Define decision variables: __LpVariable()__
 > LpVariable(name, lowBound=None, upBound=None, cat='Continuous'/'Integer', e=None ) 
-name = name of decision variables
-lowBound = lower bound, None means negative infinity
-upBound = upper bound, None means positive infinity
-cat = type of varialbes,  Continuous'/'Integer'/'Binary'
-!!!!!!! e = Used for column based modeling (???) 
+> 
+* name = name of decision variables
+* lowBound = lower bound, None means negative infinity
+* upBound = upper bound, None means positive infinity
+* cat = type of varialbes,  Continuous'/'Integer'/'Binary'
+* e = Used for column based modeling (???) 
 #### 3. Define objective function
 #### 4. Define constraints
 #### 5. Solve Model
