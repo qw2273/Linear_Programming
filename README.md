@@ -1,3 +1,6 @@
+# Notes taken from online class [Supply Chain Analytics in Python](https://campus.datacamp.com/courses/supply-chain-analytics-in-python/)
+
+
 ### What is Linear Programing(LP)
 LP is a modeling tool for Optimization
 
